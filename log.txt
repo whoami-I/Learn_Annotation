@@ -1,0 +1,148 @@
+Initialized native services in: /home/user/.gradle/native
+Found daemon DaemonInfo{pid=7311, address=[34b87224-94c3-42cc-b959-45fa5ae3b3f2 port:55978, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1588731859974, context=DefaultDaemonContext[uid=7e1dab65-2ce2-45d3-bc9c-6b4f6db2e86d,javaHome=/local/tools/android-studio/jre,daemonRegistryDir=/home/user/.gradle/daemon,pid=7311,idleTimeout=10800000,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/usr/lib/jvm/java-se-8u41-ri,daemonRegistryDir=/home/user/.gradle/daemon,pid=8295,idleTimeout=null,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+Actual: DefaultDaemonContext[uid=7e1dab65-2ce2-45d3-bc9c-6b4f6db2e86d,javaHome=/local/tools/android-studio/jre,daemonRegistryDir=/home/user/.gradle/daemon,pid=7311,idleTimeout=10800000,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=7566, address=[d0f5ed04-5683-4783-ab7e-3e2cd0de2b2b port:51416, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1588732344699, context=DefaultDaemonContext[uid=9fc89e15-03a6-4214-8d60-6c0c69d85fa2,javaHome=/local/tools/android-studio/jre,daemonRegistryDir=/home/user/.gradle/daemon,pid=7566,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/usr/lib/jvm/java-se-8u41-ri,daemonRegistryDir=/home/user/.gradle/daemon,pid=8295,idleTimeout=null,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+Actual: DefaultDaemonContext[uid=9fc89e15-03a6-4214-8d60-6c0c69d85fa2,javaHome=/local/tools/android-studio/jre,daemonRegistryDir=/home/user/.gradle/daemon,pid=7566,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 7968). The daemon log file: /home/user/.gradle/daemon/5.6.4/daemon-7968.out.log
+Starting 3rd build in daemon [uptime: 1 mins 46.917 secs, performance: 94%]
+Using 8 worker leases.
+Starting Build
+Settings evaluated using settings file '/local/sdb/myproject/Learn_Annotation/settings.gradle'.
+Projects loaded. Root project using build file '/local/sdb/myproject/Learn_Annotation/build.gradle'.
+Included projects: [root project 'My Application', project ':app', project ':ioc-annotation', project ':ioc-compiler']
+
+> Configure project :
+Evaluating root project 'My Application' using build file '/local/sdb/myproject/Learn_Annotation/build.gradle'.
+
+> Configure project :app
+Evaluating project ':app' using build file '/local/sdb/myproject/Learn_Annotation/app/build.gradle'.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration androidTestDebugCompile
+Creating configuration androidTestDebugApk
+Creating configuration androidTestDebugProvided
+Creating configuration androidTestDebugApi
+Creating configuration androidTestDebugImplementation
+Creating configuration androidTestDebugRuntimeOnly
+Creating configuration androidTestDebugCompileOnly
+Creating configuration androidTestDebugWearApp
+Creating configuration androidTestDebugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+SDK initialized in 20 ms
+Using incremental javac compilation for :app debug.
+The ProjectLayout.fileProperty() method has been deprecated. This is scheduled to be removed in Gradle 6.0. Please use the ObjectFactory.fileProperty() method instead.
+Using incremental javac compilation for :app debugUnitTest.
+Using incremental javac compilation for :app release.
+Using incremental javac compilation for :app releaseUnitTest.
+Using incremental javac compilation for :app debugAndroidTest.
+
+> Configure project :ioc-annotation
+Evaluating project ':ioc-annotation' using build file '/local/sdb/myproject/Learn_Annotation/ioc-annotation/build.gradle'.
+
+> Configure project :ioc-compiler
+Evaluating project ':ioc-compiler' using build file '/local/sdb/myproject/Learn_Annotation/ioc-compiler/build.gradle'.
+All projects evaluated.
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.BuildInitPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_BUILDINITPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.WrapperPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_WRAPPERPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.BuildInitPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_BUILDINITPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.WrapperPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_WRAPPERPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.BuildInitPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_BUILDINITPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.WrapperPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_WRAPPERPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.api.plugins.JavaLibraryPlugin expected enum ORG_GRADLE_API_PLUGINS_JAVALIBRARYPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.BuildInitPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_BUILDINITPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.buildinit.plugins.WrapperPlugin expected enum ORG_GRADLE_BUILDINIT_PLUGINS_WRAPPERPLUGIN
+Analytics other plugin to proto: Unknown plugin type org.gradle.api.plugins.JavaLibraryPlugin expected enum ORG_GRADLE_API_PLUGINS_JAVALIBRARYPLUGIN
+No tasks specified. Using default task 'help'
+Selected primary task 'help' from project :
+Tasks to be executed: [task ':help']
+:help (Thread[Execution worker for ':',5,main]) started.
+
+> Task :help
+Caching disabled for task ':help' because:
+  Build cache is disabled
+Task ':help' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+
+Welcome to Gradle 5.6.4.
+
+To run a build, run gradlew <task> ...
+
+To see a list of available tasks, run gradlew tasks
+
+To see a list of command-line options, run gradlew --help
+
+To see more detail about a task, run gradlew help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+:help (Thread[Execution worker for ':',5,main]) completed. Took 0.017 secs.
+1 actionable task: 1 executed
