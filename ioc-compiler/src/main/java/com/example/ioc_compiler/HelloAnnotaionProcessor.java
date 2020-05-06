@@ -68,7 +68,7 @@ public class HelloAnnotaionProcessor extends AbstractProcessor {
             MethodSpec main = MethodSpec.methodBuilder("main")
                     .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
                     .returns(void.class)
-                    .addParameter(String[].class, "args")
+                    //.addParameter(String[].class, "args")
                     .addStatement("$T.out.println($S)", System.class, clsNmae + "-" + msg)
                     .build();
 
