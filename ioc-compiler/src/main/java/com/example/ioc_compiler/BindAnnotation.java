@@ -64,13 +64,13 @@ public class BindAnnotation extends AbstractProcessor {
                         .addModifiers(Modifier.PUBLIC)
                         .returns(void.class)
                         .addParameter(Object.class, "target")
-                        .addCode(typeElement.getQualifiedName()+" a = ("+typeElement.getQualifiedName()+")target;");
+                        .addCode(typeElement.getQualifiedName()+" a = ("+typeElement.getQualifiedName()+")target;\n");
                         //.addStatement("$T a = ($T)target", typeElement.asType().getKind(), typeElement.asType().getClass());
 
                 for (ViewInfo viewInfo : viewInfos) {
                     StringBuilder sb = new StringBuilder();
                     //使用findviewbyid来找到相应的view
-                    methodBuilder.addCode("a." + viewInfo.name + " = a.findViewById(" + viewInfo.id + ");");
+                    methodBuilder.addCode("a." + viewInfo.name + " = a.findViewById(" + viewInfo.id + ");\n");
                     ;
                 }
                 MethodSpec build = methodBuilder.build();

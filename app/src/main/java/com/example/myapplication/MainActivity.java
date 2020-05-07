@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         //HelloWorld.main();
         AutoBind.getInstance().inject(this);
         textView.setText("hahaha");
-
     }
     @OnClick(R.id.tv)
     public void click(View v){
