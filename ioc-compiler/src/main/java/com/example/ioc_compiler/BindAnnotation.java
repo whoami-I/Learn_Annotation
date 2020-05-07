@@ -20,6 +20,7 @@ import javax.annotation.processing.Filer;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
+import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.Modifier;
 import javax.lang.model.element.Name;
@@ -38,6 +39,11 @@ public class BindAnnotation extends AbstractProcessor {
         super.init(processingEnvironment);
         mElementsUtils = processingEnvironment.getElementUtils();
         filer = processingEnvironment.getFiler();
+    }
+
+    @Override
+    public SourceVersion getSupportedSourceVersion() {
+        return SourceVersion.RELEASE_8;
     }
 
     @Override
@@ -64,13 +70,13 @@ public class BindAnnotation extends AbstractProcessor {
                         .addModifiers(Modifier.PUBLIC)
                         .returns(void.class)
                         .addParameter(Object.class, "target")
-                        .addCode(typeElement.getQualifiedName()+" a = ("+typeElement.getQualifiedName()+")target;\n");
-                        //.addStatement("$T a = ($T)target", typeElement.asType().getKind(), typeElement.asType().getClass());
+                        //.addCode(typeElement.getQualifiedName()+" a = ("+typeElement.getQualifiedName()+")target;\n");
+                        .addStatement("$L a = ($L)target", typeElement.getQualifiedName(), typeElement.getQualifiedName());
 
                 for (ViewInfo viewInfo : viewInfos) {
                     StringBuilder sb = new StringBuilder();
                     //使用findviewbyid来找到相应的view
-                    methodBuilder.addCode("a." + viewInfo.name + " = a.findViewById(" + viewInfo.id + ");\n");
+                    methodBuilder.addStatement("a.$L = a.findViewById($L)",viewInfo.name,viewInfo.id);
                     ;
                 }
                 MethodSpec build = methodBuilder.build();
