@@ -31,7 +31,7 @@ import javax.lang.model.util.Elements;
 import javax.tools.Diagnostic;
 
 @AutoService(Processor.class)
-public class BindAnnotation extends AbstractProcessor {
+public class BindAnnotationProcessor extends AbstractProcessor {
     private static final ClassName VIEW = ClassName.get("android.view", "View");
 
 

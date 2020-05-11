@@ -27,22 +27,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AutoBind.getInstance().inject(this);
-        textView.setText("hahaha");
-        textView1.setText("hahaha111");
-        textView2.setText("hahaha222");
+        textView.setText("I am the first view");
+        textView1.setText("I am the second view");
+        textView2.setText("I am the third view");
     }
     @OnClick(R.id.tv)
     public void click(View v){
-        Log.d("TAG","hello");
+        Log.d("TAG","I am the first view");
     }
 
     @OnClick(R.id.tv1)
     public void click1(View v){
-        Log.d("TAG","hello11");
+        Log.d("TAG","I am the second view");
     }
 
     @OnClick(R.id.tv2)
     public void click2(View v){
-        Log.d("TAG","hello22");
+        Log.d("TAG","I am the third view");
     }
 }
